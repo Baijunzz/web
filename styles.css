@@ -1,0 +1,124 @@
+/*
+
+CSS rules you may need for reference:
+
+- font-family
+    - Arial, sans-serif
+- line-height
+- color
+- margin
+- padding
+- background-color
+- border-radius
+- border-left
+- border-bottom
+- margin-top
+- padding-left
+- padding-bottom
+- width
+- height
+- margin-bottom
+- font-size
+
+*/
+
+/* Write your CSS code here */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header h1 {
+  background-color: lightskyblue;
+  border-radius: 5px;
+  padding: 20px 50px;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+}
+
+main {
+  background-color: white;
+  margin: 20px auto;
+}
+
+main section {
+  padding: 50px 50px;
+}
+
+body {
+  background-color: rgb(210, 210, 210);
+}
+
+@keyframes animation {
+  /*asked chat gpt how to do animations*/
+  /*start of animation*/
+  0% {
+    transform: translateX(0);
+  }
+  /*midway move a 100 px to right*/
+  50% {
+    transform: translateX(100px);
+  }
+  /*finally, return back*/
+  100% {
+    transform: translateX(0);
+  }
+}
+
+img {
+  border-radius: 5px;
+  animation-name: animation;
+  animation-duration: 4s; /*how long the animation runs*/
+}
+
+h2 {
+  border-left: 3px solid lightskyblue;
+  border-bottom: 3px solid lightskyblue;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+main p {
+  margin: 15px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer p {
+  color: grey;
+  padding: 20px 0px;
+}
+tr:nth-child(odd) {
+  background-color: rgb(230, 230, 230);
+  border-top: 1px solid rgb(161, 161, 161);
+}
+tr:first-child {
+  background-color: lightskyblue;
+  color: white;
+  border-top: none;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(210, 210, 210);
+  border-top: 1px solid rgb(161, 161, 161);
+}
+tr:last-child {
+  border-bottom: 1px solid rgb(161, 161, 161);
+}
+
+tr:hover {
+  background-color: orangered;
+  cursor: pointer;
+}
+
+table {
+  margin-bottom: 15px;
+}
+th,
+td {
+  padding: 5px 5px;
+}
+
+main p::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+}
